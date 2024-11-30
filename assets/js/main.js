@@ -1,11 +1,3 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -167,3 +159,48 @@
   new PureCounter();
 
 })();
+
+/**
+ * Modify icons to display only when hovered, and show contact info
+ */
+document.addEventListener("DOMContentLoaded", function() {
+  // Get icon elements
+  const icons = document.querySelectorAll('.contact-icon');
+
+  // Add hover event listeners
+  icons.forEach(icon => {
+    icon.addEventListener('mouseenter', function() {
+      const contactInfo = this.querySelector('.contact-info');
+      if (contactInfo) {
+        contactInfo.style.display = 'block'; // Show contact info
+      }
+    });
+
+    icon.addEventListener('mouseleave', function() {
+      const contactInfo = this.querySelector('.contact-info');
+      if (contactInfo) {
+        contactInfo.style.display = 'none'; // Hide contact info
+      }
+    });
+  });
+});
+
+/**
+ * Handle click events for each icon
+ */
+const zaloIcon = document.getElementById('zalo');
+const phoneIcon = document.getElementById('phone');
+const messengerIcon = document.getElementById('messenger');
+
+// Handle click events for each icon
+zaloIcon.addEventListener('click', function() {
+  window.location.href = 'https://zalo.me/0392217862';
+});
+
+phoneIcon.addEventListener('click', function() {
+  window.location.href = 'tel:+0392217862';
+});
+
+messengerIcon.addEventListener('click', function() {
+  alert('Liên hệ qua Messenger');
+});

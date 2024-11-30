@@ -2866,3 +2866,69 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Kiểu chung cho contact-section */
+.contact-section {
+  position: fixed;
+  bottom: 30px; /* Khoảng cách từ đáy trang */
+  right: 30px; /* Khoảng cách từ cạnh phải trang */
+  z-index: 1000; /* Đảm bảo phần này luôn hiển thị phía trên các phần khác */
+  background-color: transparent; /* Nền trong suốt */
+  padding: 10px; /* Khoảng cách giữa các biểu tượng và viền của section */
+  border-radius: 15px; /* Bo góc phần section */
+  box-shadow: none; /* Không có bóng đổ cho phần section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Canh giữa các icon */
+  gap: 15px; /* Khoảng cách giữa các icon */
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi thay đổi trạng thái */
+}
+
+/* Kiểu cho các biểu tượng liên lạc */
+.contact-icons {
+  display: flex;
+  flex-direction: column; /* Xếp các icon theo chiều dọc */
+  gap: 15px; /* Khoảng cách giữa các icon */
+  align-items: center; /* Canh giữa các icon */
+}
+
+/* Kiểu cho mỗi icon liên lạc */
+.contact-icon {
+  background-color: #fff; /* Nền trắng cho mỗi icon */
+  padding: 12px;
+  border-radius: 50%; /* Bo tròn các icon */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho mỗi icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Khoảng cách giữa hình ảnh và text */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Thêm hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover khi di chuột vào icon */
+.contact-icon:hover {
+  transform: translateY(-5px); /* Di chuyển lên một chút khi hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Tăng độ đổ bóng */
+  background-color: #f1f1f1; /* Thay đổi màu nền khi hover */
+}
+
+/* Kiểu cho hình ảnh biểu tượng */
+.contact-icon img {
+  width: 35px; /* Kích thước của biểu tượng */
+  height: 35px;
+}
+
+/* Kiểu cho thông tin liên lạc */
+.contact-info {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold; /* Làm chữ đậm để dễ đọc hơn */
+  text-align: center;
+  margin-top: 10px; /* Khoảng cách từ các biểu tượng tới thông tin liên lạc */
+}
+
+/* Tạo hiệu ứng cho contact-section khi di chuyển lên */
+.contact-section.active {
+  transform: translateY(-10px); /* Di chuyển lên một chút khi có class "active" */
+  opacity: 0.9; /* Giảm độ mờ khi có class "active" */
+}
