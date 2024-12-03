@@ -31,6 +31,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
 </head>
 
 <body class="index-page">
@@ -149,16 +152,16 @@
       <div class="contact-icons">
         <div class="contact-icon" id="zalo">
           <img src="assets/img/icon-contact/7044033_zalo_icon.png" alt="Zalo">
-          <span class="contact-info">Zalo: 0123456789</span>
+          <span class="contact-info"></span>
         </div>
         <div class="contact-icon" id="phone">
           <img src="assets/img/icon-contact/8726191_phone_volume_icon.png" alt="Phone">
-          <span class="contact-info">SĐT: 0123456789</span>
+          <span class="contact-info"></span>
         </div>
         <div class="contact-icon" id="messenger">
           <img src="assets/img/icon-contact/7086697_messenger_facebook messenger_messenger logo_icon.png"
             alt="Messenger">
-          <span class="contact-info">Messenger</span>
+          <span class="contact-info"></span>
         </div>
       </div>
     </section>
@@ -189,41 +192,49 @@
 
           <!-- Quote Form Section -->
           <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <form id="quote-form" class="php-email-form">
               <h3><i class="fas fa-envelope"></i> ĐĂNG KÝ BÁO GIÁ</h3>
               <p>Nhập thông tin vào mẫu đơn để chúng tôi có thể tư vấn cho bạn sớm nhất.</p>
               <div class="row gy-3">
-
                 <div class="col-12">
-                  <input type="text" name="name" class="form-control" placeholder="Họ và tên" required="">
-                </div>
-
-                <div class="col-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" required="phone">
+                  <input type="text" name="name" class="form-control" placeholder="Họ và tên" required>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" name="address" placeholder="Địa chỉ" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Tin nhắn" required=""></textarea>
+                  <input type="text" class="form-control" name="phone" placeholder="Số điện thoại" required>
                 </div>
-
+                <div class="col-12">
+                  <input type="text" class="form-control" name="address" placeholder="Địa chỉ" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Tin nhắn" required></textarea>
+                </div>
                 <div class="col-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
                   <button type="submit"><i class="fas fa-paper-plane"></i> GỬI NGAY</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Quote Form -->
+          </div>
+
+          <script type="text/javascript">
+            (function () {
+              emailjs.init('AbFjZ__eNeooZGyIm');
+            })();
+
+            document.getElementById('quote-form').addEventListener('submit', function (event) {
+              event.preventDefault();
+              emailjs.sendForm('service_3xj2jyt', 'template_32t9m5l', this)
+                .then(function () {
+                  alert('Yêu cầu báo giá đã được gửi thành công!');
+                }, function (error) {
+                  alert('Đã xảy ra lỗi, vui lòng thử lại.');
+                });
+            });
+          </script>
+          <!-- End Quote Form -->
 
         </div>
 
@@ -1192,6 +1203,13 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("AbFjZ__eNeooZGyIm");
+    })();
+  </script>
 
 </body>
 
