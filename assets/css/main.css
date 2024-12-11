@@ -2881,7 +2881,7 @@ section,
   flex-direction: column;
   align-items: center; /* Canh giữa các icon */
   gap: 15px; /* Khoảng cách giữa các icon */
-  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động khi thay đổi trạng thái */
+  /* transition: all 0.3s ease; Thêm hiệu ứng chuyển động khi thay đổi trạng thái */
 }
 
 /* Kiểu cho các biểu tượng liên lạc */
@@ -2916,6 +2916,10 @@ section,
 .contact-icon img {
   width: 35px; /* Kích thước của biểu tượng */
   height: 35px;
+}
+
+.contact-info {
+  display: none;
 }
 
 /* Kiểu cho thông tin liên lạc */
