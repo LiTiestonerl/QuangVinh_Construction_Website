@@ -1,11 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "**/*", "use": "@vercel/static" }
-    ],
-    "routes": [
-      { "src": "/", "dest": "/index.html" },
-      { "src": "/(.*)", "dest": "/$1" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.php",
+      "use": "vercel-php"
+    },
+    {
+      "src": "**/*.{html,css,js,png,jpg,jpeg,gif,svg,webp,ico}",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*\\.php)$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
+    }
+  ]
+}
