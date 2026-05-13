@@ -23,6 +23,27 @@
 
   document.querySelectorAll('.contact-icon').forEach((icon) => {
     const info = icon.querySelector('.contact-info');
+  /**
+   * Xử lý click cho các icon liên hệ nổi.
+   */
+  const contactLinks = {
+    zalo: 'https://zalo.me/0392217862',
+    phone: 'tel:+0392217862',
+    messenger: 'https://m.me/61556861061396'
+  };
+
+  Object.entries(contactLinks).forEach(([id, href]) => {
+    const icon = document.getElementById(id);
+
+    if (icon) {
+      icon.addEventListener('click', function() {
+        window.location.href = href;
+      });
+    }
+  });
+
+  document.querySelectorAll('.floating-contact__link').forEach((icon) => {
+    const info = icon.querySelector('.floating-contact__info');
 
     if (info) {
       icon.addEventListener('mouseenter', () => {
@@ -37,7 +58,7 @@
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-  const logoImg = document.querySelector('.logo img');
+  const logoImg = document.querySelector('.site-header__logo-image');
 
   if (logoImg) {
     logoImg.onerror = function() {
