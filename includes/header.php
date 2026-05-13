@@ -41,10 +41,10 @@
 
 <body class="<?php echo isset($bodyClass) ? $bodyClass : 'index-page'; ?>">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="site-header header d-flex align-items-center fixed-top">
     <!-- Top Bar (sẽ ẩn khi cuộn) -->
-    <div class="top-bar text-center py-2">
-      <p class="mb-0 small">
+    <div class="site-header__top-bar text-center py-2">
+      <p class="site-header__top-bar-text mb-0 small">
         <i class="fas fa-phone-alt me-2"></i> 0392 217 862
         <span class="mx-2">|</span>
         <i class="fas fa-envelope me-2"></i> xaydungqv@gmail.com
@@ -54,21 +54,21 @@
     </div>
 
     <!-- Middle Bar -->
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="site-header__inner container d-flex align-items-center justify-content-between">
       <!-- Logo -->
-      <div class="logo">
-        <img src="assets/img/logo/logo-500x200.svg" alt="Quang Vinh Logo" class="img-fluid" width="500" height="200" decoding="async">
+      <div class="site-header__logo logo">
+        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="site-header__logo-image img-fluid">
       </div>
 
       <!-- Navigation Menu -->
-      <nav id="navmenu" class="navmenu">
-        <ul class="d-flex list-unstyled m-0">
-          <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?> px-3">Trang Chủ</a></li>
-          <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?> px-3">Về Chúng Tôi</a></li>
-          <li><a href="services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : ''; ?> px-3">Dịch Vụ</a></li>
-          <li><a href="projects.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?> px-3">Dự Án</a></li>
-          <li><a href="blog.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'blog.php' ? 'active' : ''; ?> px-3">Blog</a></li>
-          <li><a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?> px-3">Liên Hệ</a></li>
+      <nav id="navmenu" class="site-header__nav navmenu">
+        <ul class="site-header__menu d-flex list-unstyled m-0">
+          <li class="site-header__menu-item"><a href="index.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?> px-3">Trang Chủ</a></li>
+          <li class="site-header__menu-item"><a href="about.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?> px-3">Về Chúng Tôi</a></li>
+          <li class="site-header__menu-item"><a href="services.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : ''; ?> px-3">Dịch Vụ</a></li>
+          <li class="site-header__menu-item"><a href="projects.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?> px-3">Dự Án</a></li>
+          <li class="site-header__menu-item"><a href="blog.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'blog.php' ? 'active' : ''; ?> px-3">Blog</a></li>
+          <li class="site-header__menu-item"><a href="contact.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?> px-3">Liên Hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

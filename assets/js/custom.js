@@ -21,6 +21,8 @@
     });
   }
 
+  document.querySelectorAll('.contact-icon').forEach((icon) => {
+    const info = icon.querySelector('.contact-info');
   /**
    * Xử lý click cho các icon liên hệ nổi.
    */
@@ -40,8 +42,8 @@
     }
   });
 
-  document.querySelectorAll('.contact-icon').forEach((icon) => {
-    const info = icon.querySelector('.contact-info');
+  document.querySelectorAll('.floating-contact__link').forEach((icon) => {
+    const info = icon.querySelector('.floating-contact__info');
 
     if (info) {
       icon.addEventListener('mouseenter', () => {
@@ -56,7 +58,7 @@
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-  const logoImg = document.querySelector('.logo img');
+  const logoImg = document.querySelector('.site-header__logo-image');
 
   if (logoImg) {
     logoImg.onerror = function() {
