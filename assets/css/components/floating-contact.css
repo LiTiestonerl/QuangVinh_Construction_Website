@@ -1,0 +1,63 @@
+.floating-contact {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.floating-contact__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.floating-contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  padding: 12px;
+  background: var(--color-white);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base), background-color var(--transition-base);
+}
+
+.floating-contact__link:hover {
+  background-color: #f1f1f1;
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 10px 25px rgba(254, 185, 0, 0.4);
+  transform: scale(1.1);
+}
+
+.floating-contact__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.floating-contact.active {
+  opacity: 0.9;
+  transform: translateY(-10px);
+}
+
+@media (min-width: 768px) {
+  .floating-contact {
+    right: 25px;
+    bottom: 30px;
+  }
+}

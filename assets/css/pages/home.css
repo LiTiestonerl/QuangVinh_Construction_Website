@@ -1,0 +1,32 @@
+.index-page .get-started .content {
+  padding: 30px 0;
+}
+
+.index-page .get-started .content h3 {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.index-page .get-started .content h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.index-page .get-started .content p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .index-page .get-started .content h3 {
+    font-size: 36px;
+  }
+}
