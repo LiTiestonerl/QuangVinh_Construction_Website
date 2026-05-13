@@ -13,6 +13,7 @@
   <!-- Favicons -->
   <link href="assets/img/logo/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preload" as="image" href="assets/img/hero-carousel/matbangcongty.jpg" type="image/jpeg" fetchpriority="high">
 
   <!-- Fonts -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -56,7 +57,7 @@
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Logo -->
       <div class="logo">
-        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="img-fluid">
+        <img src="assets/img/logo/logo-500x200.svg" alt="Quang Vinh Logo" class="img-fluid" width="500" height="200" decoding="async">
       </div>
 
       <!-- Navigation Menu -->

@@ -23,7 +23,7 @@
         <div class="swiper-slide">
           <div class="testimonial-item bg-white p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="rounded-circle me-3" width="60" alt="">
+              <img src="assets/img/testimonials/testimonials-1.jpg" class="rounded-circle me-3" width="60" height="60" loading="lazy" decoding="async" alt="">
               <div>
                 <h5 class="mb-0">Anh Nguyễn Văn Nhật</h5>
                 <p class="text-muted">Chủ đầu tư, Phú Mỹ</p>
@@ -42,7 +42,7 @@
         <div class="swiper-slide">
           <div class="testimonial-item bg-white p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="rounded-circle me-3" width="60" alt="">
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="rounded-circle me-3" width="60" height="60" loading="lazy" decoding="async" alt="">
               <div>
                 <h5 class="mb-0">Chị Trần Thị Lệ</h5>
                 <p class="text-muted">Bến Cát</p>
@@ -61,7 +61,7 @@
         <div class="swiper-slide">
           <div class="testimonial-item bg-white p-4 rounded-4 shadow-sm">
             <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="rounded-circle me-3" width="60" alt="">
+              <img src="assets/img/testimonials/testimonials-3.jpg" class="rounded-circle me-3" width="60" height="60" loading="lazy" decoding="async" alt="">
               <div>
                 <h5 class="mb-0">Anh Lai Hùng</h5>
                 <p class="text-muted">Chủ xưởng cơ khí</p>

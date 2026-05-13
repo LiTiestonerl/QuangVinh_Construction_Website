@@ -9,7 +9,7 @@
       <div class="col-lg-6" data-aos="fade-up">
         <div class="card-item d-flex flex-wrap bg-white rounded-4 shadow-sm overflow-hidden">
           <div class="col-xl-5 p-0">
-            <img src="assets/img/constructions-1.jpg" class="img-fluid h-100 object-fit-cover" alt="Nhà xưởng tiền chế">
+            <img src="assets/img/constructions-1.jpg" class="img-fluid h-100 object-fit-cover" width="800" height="600" loading="lazy" decoding="async" alt="Nhà xưởng tiền chế">
           </div>
           <div class="col-xl-7 p-4">
             <h4 class="fw-bold">Nhà xưởng tiền chế Anh Phát</h4>
@@ -22,7 +22,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <div class="card-item d-flex flex-wrap bg-white rounded-4 shadow-sm overflow-hidden">
           <div class="col-xl-5 p-0">
-            <img src="assets/img/constructions-2.jpg" class="img-fluid h-100 object-fit-cover" alt="Nhà mái Thái">
+            <img src="assets/img/constructions-2.jpg" class="img-fluid h-100 object-fit-cover" width="800" height="600" loading="lazy" decoding="async" alt="Nhà mái Thái">
           </div>
           <div class="col-xl-7 p-4">
             <h4 class="fw-bold">Biệt thự mái Thái Anh Nhật</h4>
@@ -35,7 +35,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <div class="card-item d-flex flex-wrap bg-white rounded-4 shadow-sm overflow-hidden">
           <div class="col-xl-5 p-0">
-            <img src="assets/img/constructions-3.jpg" class="img-fluid h-100 object-fit-cover" alt="Sửa chữa nhà xưởng">
+            <img src="assets/img/constructions-3.jpg" class="img-fluid h-100 object-fit-cover" width="800" height="600" loading="lazy" decoding="async" alt="Sửa chữa nhà xưởng">
           </div>
           <div class="col-xl-7 p-4">
             <h4 class="fw-bold">Cải tạo nhà xưởng Cơ khí Toàn Thắng</h4>
@@ -47,7 +47,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
         <div class="card-item d-flex flex-wrap bg-white rounded-4 shadow-sm overflow-hidden">
           <div class="col-xl-5 p-0">
-            <img src="assets/img/constructions-4.jpg" class="img-fluid h-100 object-fit-cover" alt="Phá dỡ công trình">
+            <img src="assets/img/constructions-4.jpg" class="img-fluid h-100 object-fit-cover" width="800" height="600" loading="lazy" decoding="async" alt="Phá dỡ công trình">
           </div>
           <div class="col-xl-7 p-4">
             <h4 class="fw-bold">Phá dỡ an toàn Khu phố 7</h4>

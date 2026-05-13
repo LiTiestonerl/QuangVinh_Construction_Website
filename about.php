@@ -22,7 +22,7 @@ include 'includes/header.php';
           <p>Với đội ngũ kỹ sư giàu kinh nghiệm, công nhân lành nghề và hệ thống máy móc hiện đại, chúng tôi cam kết thực hiện mọi dự án với tiêu chuẩn cao nhất, đáp ứng nhu cầu đa dạng của khách hàng.</p>
         </div>
         <div class="col-lg-6">
-          <img src="assets/img/about-us.jpg" class="img-fluid rounded-4" alt="Về chúng tôi">
+          <img src="assets/img/about.jpg" class="img-fluid rounded-4" alt="Về chúng tôi" width="1024" height="768" loading="lazy" decoding="async">
         </div>
       </div>
     </div>

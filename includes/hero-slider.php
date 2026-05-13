@@ -2,7 +2,7 @@
   <div class="info d-flex align-items-center">
     <div class="container">
       <div class="logo">
-        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="hero-logo img-fluid mx-auto d-block">
+        <img src="assets/img/logo/logo-500x200.svg" alt="Quang Vinh Logo" class="hero-logo img-fluid mx-auto d-block" width="500" height="200" decoding="async">
       </div>
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-8 text-center">
@@ -18,13 +18,13 @@
 
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
+      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" width="1280" height="907" fetchpriority="high" decoding="async">
     </div>
-    <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
+    <div class="carousel-item text-center">
+      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" width="1280" height="907" loading="lazy" decoding="async">
     </div>
-    <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
+    <div class="carousel-item text-center">
+      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" width="1280" height="907" loading="lazy" decoding="async">
     </div>
   </div>
 </section>

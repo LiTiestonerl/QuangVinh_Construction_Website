@@ -31,11 +31,11 @@ include 'includes/header.php';
           <!-- Dự án anh Nhật (hiện đại) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hiendai">
             <div class="portfolio-content">
-              <img src="assets/img/projects/A NHAT/1.jpg" class="img-fluid" alt="Nhà anh Nhật">
+              <img src="assets/img/projects/a-nhat/1.jpg" class="img-fluid" width="2000" height="1700" loading="lazy" decoding="async" alt="Nhà anh Nhật">
               <div class="portfolio-info p-3">
                 <h4>Nhà anh Nhật (Phú Mỹ)</h4>
                 <p>Thiết kế hiện đại, 3 phòng ngủ, hoàn thiện 2024</p>
-                <a href="assets/img/projects/A NHAT/1.jpg" title="Nhà anh Nhật" data-gallery="portfolio-gallery"
+                <a href="assets/img/projects/a-nhat/1.jpg" title="Nhà anh Nhật" data-gallery="portfolio-gallery"
                   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="project-details.php" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -45,11 +45,11 @@ include 'includes/header.php';
           <!-- Dự án anh Sang (mái Thái) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maithai">
             <div class="portfolio-content">
-              <img src="assets/img/projects/A SANG/1.jpg" class="img-fluid" alt="Nhà anh Sang">
+              <img src="assets/img/projects/a-sang/1.jpg" class="img-fluid" width="2560" height="1440" loading="lazy" decoding="async" alt="Nhà anh Sang">
               <div class="portfolio-info p-3">
                 <h4>Nhà anh Sang (Bến Cát)</h4>
                 <p>Biệt thự mái Thái 2 tầng, sân vườn rộng</p>
-                <a href="assets/img/projects/A SANG/1.jpg" title="Nhà anh Sang" data-gallery="portfolio-gallery"
+                <a href="assets/img/projects/a-sang/1.jpg" title="Nhà anh Sang" data-gallery="portfolio-gallery"
                   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="project-details.php" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -59,7 +59,7 @@ include 'includes/header.php';
           <!-- Dự án A Tony (mái Nhật) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mainhat">
             <div class="portfolio-content">
-              <img src="assets/img/projects/ATONY/2.jpg" class="img-fluid" alt="Nhà anh Tony">
+              <img src="assets/img/projects/ATONY/2.jpg" class="img-fluid" width="2400" height="3500" loading="lazy" decoding="async" alt="Nhà anh Tony">
               <div class="portfolio-info p-3">
                 <h4>Nhà anh Tony (Thủ Dầu Một)</h4>
                 <p>Nhà ống 3 tầng mái Nhật, nội thất gỗ tự nhiên</p>
@@ -73,11 +73,11 @@ include 'includes/header.php';
           <!-- Dự án chị Lệ (mái Thái) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-maithai">
             <div class="portfolio-content">
-              <img src="assets/img/projects/CHI LE/1.jpg" class="img-fluid" alt="Nhà chị Lệ">
+              <img src="assets/img/projects/chi-le/1.jpg" class="img-fluid" width="4000" height="2700" loading="lazy" decoding="async" alt="Nhà chị Lệ">
               <div class="portfolio-info p-3">
                 <h4>Nhà chị Lệ (Bến Cát)</h4>
                 <p>Nhà cấp 4 mái Thái, 3 phòng ngủ, sân trước rộng</p>
-                <a href="assets/img/projects/CHI LE/1.jpg" title="Nhà chị Lệ" data-gallery="portfolio-gallery"
+                <a href="assets/img/projects/chi-le/1.jpg" title="Nhà chị Lệ" data-gallery="portfolio-gallery"
                   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="project-details.php" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -87,11 +87,11 @@ include 'includes/header.php';
           <!-- Dự án anh Lai Hùng (nhà xưởng) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-nhaxuong">
             <div class="portfolio-content">
-              <img src="assets/img/projects/LAI HUNG/1.jpg" class="img-fluid" alt="Xưởng anh Hùng">
+              <img src="assets/img/projects/lai-hung/1.jpg" class="img-fluid" width="2400" height="1700" loading="lazy" decoding="async" alt="Xưởng anh Hùng">
               <div class="portfolio-info p-3">
                 <h4>Xưởng anh Hùng (KCN Mỹ Phước)</h4>
                 <p>Nhà xưởng tiền chế 500m², cao 8m</p>
-                <a href="assets/img/projects/LAI HUNG/1.jpg" title="Xưởng anh Hùng" data-gallery="portfolio-gallery"
+                <a href="assets/img/projects/lai-hung/1.jpg" title="Xưởng anh Hùng" data-gallery="portfolio-gallery"
                   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="project-details.php" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -101,11 +101,11 @@ include 'includes/header.php';
           <!-- Dự án nhà mái Nhật khác -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mainhat">
             <div class="portfolio-content">
-              <img src="assets/img/projects/NHA MAI NHAT/1.jpg" class="img-fluid" alt="Nhà mái Nhật">
+              <img src="assets/img/projects/nha-mai-nhat/1.jpg" class="img-fluid" width="4000" height="2700" loading="lazy" decoding="async" alt="Nhà mái Nhật">
               <div class="portfolio-info p-3">
                 <h4>Nhà chú Tư (Phú An)</h4>
                 <p>Nhà vườn 1 tầng mái Nhật, diện tích 8x20m</p>
-                <a href="assets/img/projects/NHA MAI NHAT/1.jpg" title="Nhà chú Tư" data-gallery="portfolio-gallery"
+                <a href="assets/img/projects/nha-mai-nhat/1.jpg" title="Nhà chú Tư" data-gallery="portfolio-gallery"
                   class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="project-details.php" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -115,7 +115,7 @@ include 'includes/header.php';
           <!-- Dự án Uyên (hiện đại) -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hiendai">
             <div class="portfolio-content">
-              <img src="assets/img/projects/UYEN/1.jpg" class="img-fluid" alt="Nhà chị Uyên">
+              <img src="assets/img/projects/UYEN/1.jpg" class="img-fluid" width="2500" height="1500" loading="lazy" decoding="async" alt="Nhà chị Uyên">
               <div class="portfolio-info p-3">
                 <h4>Nhà chị Uyên (Chánh Nghĩa)</h4>
                 <p>Nhà phố 3 tầng, phong cách tối giản, nội thất hiện đại</p>
