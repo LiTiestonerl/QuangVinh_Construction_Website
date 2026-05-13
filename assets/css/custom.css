@@ -18,3 +18,9 @@
   margin-bottom: 15px;
   font-size: 22px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .top-bar p {
+    animation: none;
+  }
+}
