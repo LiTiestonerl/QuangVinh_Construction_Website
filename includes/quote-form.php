@@ -20,7 +20,7 @@
       </div>
 
       <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
-        <form id="quote-form" class="php-email-form">
+        <form id="quote-form" class="php-email-form" action="forms/quote.php" method="post">
           <h3><i class="fas fa-envelope"></i> ĐĂNG KÝ BÁO GIÁ</h3>
           <p class="text-muted">Nhập thông tin, chúng tôi sẽ tư vấn miễn phí trong 24h.</p>
           <div class="row gy-3">
@@ -40,7 +40,9 @@
               <textarea class="form-control" name="message" rows="5" placeholder="Nội dung yêu cầu *" required></textarea>
             </div>
             <div class="col-12 text-center">
-              <div class="loading" style="display:none;">Đang gửi...</div>
+              <div class="loading">Đang gửi...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Yêu cầu báo giá đã được gửi thành công. Chúng tôi sẽ liên hệ lại trong 24h.</div>
               <button type="submit"><i class="fas fa-paper-plane me-2"></i> GỬI YÊU CẦU</button>
             </div>
           </div>
