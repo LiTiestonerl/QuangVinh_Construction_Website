@@ -1,0 +1,223 @@
+.footer {
+  position: relative;
+  color: #e5e5e5;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-footer-start) 0%, var(--color-footer-end) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer::before {
+  display: none;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer .footer-logo {
+  max-height: 70px;
+  margin-bottom: var(--space-5);
+  filter: brightness(1.1);
+}
+
+.footer h4 {
+  margin-bottom: 18px;
+  padding-bottom: 0;
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer .footer-about p {
+  margin-bottom: var(--space-5);
+  color: #cfcfcf;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer h5 {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.footer .footer-links ul li,
+.footer .footer-links li {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.footer .footer-links ul a,
+.footer .footer-links a {
+  display: inline-block;
+  color: #ccc;
+  font-size: 14px;
+  transition: var(--transition-base);
+}
+
+.footer .footer-links ul a:hover,
+.footer .footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.footer .footer-contact i {
+  width: 24px;
+  color: var(--accent-color);
+  font-size: 16px;
+}
+
+.footer .social-links {
+  justify-content: center;
+}
+
+.footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  color: var(--accent-color);
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50%;
+  transition: var(--transition-base);
+}
+
+.footer .social-links a:hover {
+  color: var(--color-footer-start);
+  background: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.footer .fanpage-box {
+  max-width: 300px;
+  padding: 22px 20px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  transition: var(--transition-base);
+}
+
+.footer .fanpage-box:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.footer .fanpage-box p {
+  margin-bottom: 18px;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.footer .btn-facebook {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 24px;
+  color: var(--color-footer-start);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--accent-color);
+  border-radius: 40px;
+  transition: var(--transition-base);
+}
+
+.footer .btn-facebook:hover {
+  color: var(--color-black);
+  background: var(--color-primary-dark);
+  box-shadow: 0 5px 15px rgba(254, 185, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.footer .copyright a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+
+  .footer h5 {
+    margin-top: 0;
+    font-size: 17px;
+  }
+
+  .footer h5::after {
+    left: 0;
+    transform: none;
+  }
+
+  .footer .footer-contact p,
+  .footer .social-links {
+    justify-content: flex-start;
+  }
+
+  .footer .footer-links ul li,
+  .footer .footer-links li {
+    text-align: left;
+  }
+
+  .footer .footer-links ul a:hover,
+  .footer .footer-links a:hover {
+    transform: translateX(4px);
+  }
+
+  .footer .fanpage-box {
+    max-width: none;
+  }
+}

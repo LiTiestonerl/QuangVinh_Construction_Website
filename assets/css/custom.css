@@ -1,117 +1,20 @@
 /* ===== CẢI THIỆN GIAO DIỆN ===== */
 
-/* Đảm bảo logo hiển thị (nếu ảnh bị lỗi, hiển thị text thay thế) */
-.logo img {
-  max-height: 230px;
-  width: auto;
-  display: block;
-}
-/* Dự phòng nếu ảnh không tải được */
-.logo img::before {
-  content: "QUANG VINH";
-  font-weight: bold;
-  color: #fff;
-  background: #feb900;
-  padding: 5px 10px;
-  border-radius: 5px;
+.logo-fallback,
+.footer-logo-fallback {
+  display: inline-block;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
-/* Top bar cải tiến */
-.top-bar {
-  background: linear-gradient(90deg, #feb900, #ff8c00) !important;
-  color: #000 !important;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  padding: 8px 0 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.top-bar p {
-  margin: 0;
-  animation: slide 35s linear infinite;
-  white-space: nowrap;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-/* Dừng animation khi hover để dễ đọc */
-.top-bar:hover p {
-  animation-play-state: paused;
+.logo-fallback {
+  padding: 5px 15px;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
 }
 
-/* Menu desktop */
-@media (min-width: 1200px) {
-  #header .navmenu ul li a {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 15px !important;
-    transition:
-      color 0.3s,
-      background 0.3s;
-    border-radius: 30px;
-  }
-  #header .navmenu ul li a:hover,
-  #header .navmenu ul li a.active {
-    color: #feb900 !important;
-    background: rgba(255, 255, 255, 0.1);
-  }
-  /* Khi đã cuộn (scrolled) */
-  .scrolled #header .navmenu ul li a {
-    color: #333 !important;
-  }
-  .scrolled #header .navmenu ul li a:hover,
-  .scrolled #header .navmenu ul li a.active {
-    color: #feb900 !important;
-    background: rgba(0, 0, 0, 0.05);
-  }
-}
-
-/* Icon liên hệ nổi */
-.contact-section {
-  bottom: 30px;
-  right: 25px;
-}
-.contact-icon {
-  width: 55px;
-  height: 55px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-  border: 2px solid #feb900;
-}
-.contact-icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 25px rgba(254, 185, 0, 0.4);
-  border-color: #ff8c00;
-}
-.contact-icon img {
-  width: 30px;
-  height: 30px;
-}
-
-/* Responsive cho mobile */
-@media (max-width: 768px) {
-  .top-bar p {
-    font-size: 13px;
-    animation: slide 25s linear infinite;
-  }
-  .logo img {
-    max-height: 50px;
-  }
-  .footer h4,
-  .footer h5 {
-    font-size: 16px;
-  }
+.footer-logo-fallback {
+  margin-bottom: 15px;
+  font-size: 22px;
 }
