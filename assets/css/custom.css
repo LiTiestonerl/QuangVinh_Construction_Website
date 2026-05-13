@@ -48,29 +48,31 @@
   animation-play-state: paused;
 }
 
-/* Menu chính */
-.navmenu ul li a {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 15px !important;
-  transition:
-    color 0.3s,
-    background 0.3s;
-  border-radius: 30px;
-}
-.navmenu ul li a:hover,
-.navmenu ul li a.active {
-  color: #feb900 !important;
-  background: rgba(255, 255, 255, 0.1);
-}
-/* Khi đã cuộn (scrolled) */
-.scrolled .navmenu ul li a {
-  color: #333 !important;
-}
-.scrolled .navmenu ul li a:hover,
-.scrolled .navmenu ul li a.active {
-  color: #feb900 !important;
-  background: rgba(0, 0, 0, 0.05);
+/* Menu desktop */
+@media (min-width: 1200px) {
+  #header .navmenu ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px !important;
+    transition:
+      color 0.3s,
+      background 0.3s;
+    border-radius: 30px;
+  }
+  #header .navmenu ul li a:hover,
+  #header .navmenu ul li a.active {
+    color: #feb900 !important;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  /* Khi đã cuộn (scrolled) */
+  .scrolled #header .navmenu ul li a {
+    color: #333 !important;
+  }
+  .scrolled #header .navmenu ul li a:hover,
+  .scrolled #header .navmenu ul li a.active {
+    color: #feb900 !important;
+    background: rgba(0, 0, 0, 0.05);
+  }
 }
 
 /* Icon liên hệ nổi */
@@ -107,10 +109,6 @@
   }
   .logo img {
     max-height: 50px;
-  }
-  .navmenu ul li a {
-    font-size: 14px;
-    padding: 8px 10px;
   }
   .footer h4,
   .footer h5 {

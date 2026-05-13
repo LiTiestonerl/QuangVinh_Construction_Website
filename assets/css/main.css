@@ -165,12 +165,18 @@ h6 {
     background 0.3s ease,
     box-shadow 0.3s ease;
 }
-#header a,
-#header p,
-#header .contact,
-#header .navmenu ul li a {
+#header .top-bar p,
+#header .middle-bar .contact,
+#header .middle-bar .contact p {
   color: #fff !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1200px) {
+  #header .navmenu ul li a {
+    color: #fff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
 #header .logo img {
   max-height: 60px;
@@ -332,36 +338,38 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-.navmenu {
+#header .navmenu {
   width: 100%;
 }
 
-.navmenu ul {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  margin: 0;
-  list-style: none;
-}
+@media (min-width: 1200px) {
+  #header .navmenu ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+  }
 
-.navmenu ul li {
-  margin: 0 15px;
-}
+  #header .navmenu ul li {
+    margin: 0 15px;
+  }
 
-.navmenu ul li a {
-  font-size: 16px;
-  color: var(--default-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+  #header .navmenu ul li a {
+    font-size: 16px;
+    color: var(--default-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
 
-.scrolled .navmenu ul li a {
-  color: var(--nav-color);
-}
+  .scrolled #header .navmenu ul li a {
+    color: var(--nav-color);
+  }
 
-.navmenu ul li a:hover {
-  color: var(--nav-hover-color);
+  #header .navmenu ul li a:hover {
+    color: var(--nav-hover-color);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -375,14 +383,6 @@ h6 {
   .middle-bar .search-box {
     margin-top: 10px;
     justify-content: center;
-  }
-  .navmenu ul {
-    flex-direction: column;
-    padding: 10px 0;
-    justify-content: flex-start;
-  }
-  .navmenu ul li {
-    margin: 5px 0;
   }
 }
 
@@ -430,12 +430,12 @@ h6 {
     margin-right: 10px;
     transition: color 0.3s ease;
   }
-  .navmenu {
+  #header .navmenu {
     padding: 0;
     z-index: 9997;
   }
-  .navmenu ul {
-    display: none;
+  #header .navmenu ul {
+    display: none !important;
     list-style: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
@@ -447,8 +447,8 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
-  .navmenu a,
-  .navmenu a:focus {
+  #header .navmenu a,
+  #header .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-size: 17px;
@@ -459,12 +459,12 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
+  #header .navmenu a:hover,
+  #header .navmenu .active,
+  #header .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
-  .navmenu .dropdown ul {
+  #header .navmenu .dropdown ul {
     position: static;
     display: none;
     padding: 10px 0;
@@ -472,18 +472,25 @@ h6 {
     background-color: var(--nav-dropdown-background-color);
     transition: all 0.5s ease-in-out;
   }
-  .navmenu .dropdown > .dropdown-active {
+  #header .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
-  .mobile-nav-active .navmenu {
+  .mobile-nav-active #header .navmenu {
     position: fixed;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
   }
-  .mobile-nav-active .navmenu > ul {
-    display: block;
+  .mobile-nav-active #header .navmenu > ul {
+    display: block !important;
+  }
+  .mobile-nav-active #navmenu a {
+    color: var(--nav-dropdown-color) !important;
+  }
+  .mobile-nav-active #navmenu a:hover,
+  .mobile-nav-active #navmenu .active {
+    color: var(--accent-color) !important;
   }
 }
 
