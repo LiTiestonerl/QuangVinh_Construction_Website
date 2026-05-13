@@ -40,43 +40,34 @@
 
 <body class="<?php echo isset($bodyClass) ? $bodyClass : 'index-page'; ?>">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="site-header header d-flex align-items-center fixed-top">
     <!-- Top Bar (sẽ ẩn khi cuộn) -->
-    <div class="top-bar text-center py-2">
-      <p class="top-bar__content mb-0 small">
-        <span class="top-bar__item">
-          <i class="fas fa-phone-alt me-2" aria-hidden="true"></i>
-          <a class="top-bar__link" href="tel:+84392217862">0392 217 862</a>
-        </span>
-        <span class="top-bar__separator mx-2" aria-hidden="true">|</span>
-        <span class="top-bar__item">
-          <i class="fas fa-envelope me-2" aria-hidden="true"></i>
-          <a class="top-bar__link" href="mailto:xaydungquangvinh7788@gmail.com">xaydungquangvinh7788@gmail.com</a>
-        </span>
-        <span class="top-bar__separator top-bar__separator--address mx-2" aria-hidden="true">|</span>
-        <span class="top-bar__item top-bar__item--address">
-          <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
-          KDC Mỹ Phước 3, TP. Bến Cát, Bình Dương
-        </span>
+    <div class="site-header__top-bar text-center py-2">
+      <p class="site-header__top-bar-text mb-0 small">
+        <i class="fas fa-phone-alt me-2"></i> 0392 217 862
+        <span class="mx-2">|</span>
+        <i class="fas fa-envelope me-2"></i> xaydungqv@gmail.com
+        <span class="mx-2">|</span>
+        <i class="fas fa-map-marker-alt me-2"></i> KDC Mỹ Phước 3, TP. Bến Cát, Bình Dương
       </p>
     </div>
 
     <!-- Middle Bar -->
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="site-header__inner container d-flex align-items-center justify-content-between">
       <!-- Logo -->
-      <div class="logo">
-        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="img-fluid">
+      <div class="site-header__logo logo">
+        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="site-header__logo-image img-fluid">
       </div>
 
       <!-- Navigation Menu -->
-      <nav id="navmenu" class="navmenu">
-        <ul class="d-flex list-unstyled m-0">
-          <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?> px-3">Trang Chủ</a></li>
-          <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?> px-3">Về Chúng Tôi</a></li>
-          <li><a href="services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : ''; ?> px-3">Dịch Vụ</a></li>
-          <li><a href="projects.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?> px-3">Dự Án</a></li>
-          <li><a href="blog.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'blog.php' ? 'active' : ''; ?> px-3">Blog</a></li>
-          <li><a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?> px-3">Liên Hệ</a></li>
+      <nav id="navmenu" class="site-header__nav navmenu">
+        <ul class="site-header__menu d-flex list-unstyled m-0">
+          <li class="site-header__menu-item"><a href="index.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?> px-3">Trang Chủ</a></li>
+          <li class="site-header__menu-item"><a href="about.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?> px-3">Về Chúng Tôi</a></li>
+          <li class="site-header__menu-item"><a href="services.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : ''; ?> px-3">Dịch Vụ</a></li>
+          <li class="site-header__menu-item"><a href="projects.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?> px-3">Dự Án</a></li>
+          <li class="site-header__menu-item"><a href="blog.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'blog.php' ? 'active' : ''; ?> px-3">Blog</a></li>
+          <li class="site-header__menu-item"><a href="contact.php" class="site-header__link <?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?> px-3">Liên Hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
