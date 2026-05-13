@@ -36,8 +36,6 @@
   <!-- Custom CSS cho cải thiện UX/UI -->
   <link href="assets/css/custom.css" rel="stylesheet">
 
-  <!-- EmailJS -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="<?php echo isset($bodyClass) ? $bodyClass : 'index-page'; ?>">
