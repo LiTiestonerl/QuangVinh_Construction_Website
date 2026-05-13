@@ -17,15 +17,16 @@
   </div>
 
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-    <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
-    </div>
-    <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
-    </div>
-    <div class="carousel-item active text-center">
-      <img src="assets/img/hero-carousel/matbangcongty.jpg" alt="Công trình nhà ở" class="img-fluid mx-auto d-block" style="width:80%; max-width:100%; height:auto;">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <img src="assets/img/z7810781069603_ea33772271110780e7e99268660a05ce.jpg" alt="Công trình nhà ở Quang Vinh hoàn thiện" class="img-fluid mx-auto d-block">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="assets/img/z7810781122356_6dc41852fe64134a7fb9fc72a89f1559.jpg" alt="Thi công nhà ở dân dụng Quang Vinh" class="img-fluid mx-auto d-block">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="assets/img/z7810781180272_046a5a33e3a8cd28d121b1350e8ac061.jpg" alt="Công trình xây dựng dân dụng Quang Vinh" class="img-fluid mx-auto d-block">
+      </div>
     </div>
   </div>
 </section>
-
