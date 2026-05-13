@@ -43,12 +43,21 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <!-- Top Bar (sẽ ẩn khi cuộn) -->
     <div class="top-bar text-center py-2">
-      <p class="mb-0 small">
-        <i class="fas fa-phone-alt me-2"></i> 0392 217 862
-        <span class="mx-2">|</span>
-        <i class="fas fa-envelope me-2"></i> xaydungqv@gmail.com
-        <span class="mx-2">|</span>
-        <i class="fas fa-map-marker-alt me-2"></i> KDC Mỹ Phước 3, TP. Bến Cát, Bình Dương
+      <p class="top-bar__content mb-0 small">
+        <span class="top-bar__item">
+          <i class="fas fa-phone-alt me-2" aria-hidden="true"></i>
+          <a class="top-bar__link" href="tel:+84392217862">0392 217 862</a>
+        </span>
+        <span class="top-bar__separator mx-2" aria-hidden="true">|</span>
+        <span class="top-bar__item">
+          <i class="fas fa-envelope me-2" aria-hidden="true"></i>
+          <a class="top-bar__link" href="mailto:xaydungquangvinh7788@gmail.com">xaydungquangvinh7788@gmail.com</a>
+        </span>
+        <span class="top-bar__separator top-bar__separator--address mx-2" aria-hidden="true">|</span>
+        <span class="top-bar__item top-bar__item--address">
+          <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+          KDC Mỹ Phước 3, TP. Bến Cát, Bình Dương
+        </span>
       </p>
     </div>
 

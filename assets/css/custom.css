@@ -23,28 +23,19 @@
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.5px;
-  padding: 8px 0 !important;
+  padding-block: 8px !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.top-bar p {
+
+.top-bar__content {
   margin: 0;
+  white-space: normal;
   animation: slide 35s linear infinite;
-  white-space: nowrap;
 }
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+
 /* Dừng animation khi hover để dễ đọc */
-.top-bar:hover p {
+.top-bar:hover .top-bar__content {
   animation-play-state: paused;
 }
 
@@ -103,9 +94,8 @@
 
 /* Responsive cho mobile */
 @media (max-width: 768px) {
-  .top-bar p {
+  .top-bar__content {
     font-size: 13px;
-    animation: slide 25s linear infinite;
   }
   .logo img {
     max-height: 50px;
@@ -113,5 +103,11 @@
   .footer h4,
   .footer h5 {
     font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top-bar p {
+    animation: none;
   }
 }
