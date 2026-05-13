@@ -21,25 +21,6 @@
     });
   }
 
-  /**
-   * Xử lý click cho các icon liên hệ nổi.
-   */
-  const contactLinks = {
-    zalo: 'https://zalo.me/0392217862',
-    phone: 'tel:+0392217862',
-    messenger: 'https://m.me/61556861061396'
-  };
-
-  Object.entries(contactLinks).forEach(([id, href]) => {
-    const icon = document.getElementById(id);
-
-    if (icon) {
-      icon.addEventListener('click', function() {
-        window.location.href = href;
-      });
-    }
-  });
-
   document.querySelectorAll('.contact-icon').forEach((icon) => {
     const info = icon.querySelector('.contact-info');
 
