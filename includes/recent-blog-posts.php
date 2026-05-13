@@ -9,7 +9,7 @@
       <div class="col-xl-4 col-md-6" data-aos="fade-up">
         <div class="post-item bg-white rounded-4 shadow-sm h-100">
           <div class="post-img position-relative">
-            <img src="assets/img/blog/blog-1.jpg" class="img-fluid rounded-top-4" alt="">
+            <img src="assets/img/blog/blog-1.jpg" class="img-fluid rounded-top-4" alt="" width="1024" height="768" loading="lazy" decoding="async">
             <span
               class="post-date badge bg-warning text-dark position-absolute bottom-0 start-0 m-3 p-2">15/03/2025</span>
           </div>
@@ -25,7 +25,7 @@
       <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="post-item bg-white rounded-4 shadow-sm h-100">
           <div class="post-img position-relative">
-            <img src="assets/img/blog/blog-2.jpg" class="img-fluid rounded-top-4" alt="">
+            <img src="assets/img/blog/blog-2.jpg" class="img-fluid rounded-top-4" alt="" width="1024" height="768" loading="lazy" decoding="async">
             <span
               class="post-date badge bg-warning text-dark position-absolute bottom-0 start-0 m-3 p-2">28/02/2025</span>
           </div>
@@ -41,7 +41,7 @@
       <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="post-item bg-white rounded-4 shadow-sm h-100">
           <div class="post-img position-relative">
-            <img src="assets/img/blog/blog-3.jpg" class="img-fluid rounded-top-4" alt="">
+            <img src="assets/img/blog/blog-3.jpg" class="img-fluid rounded-top-4" alt="" width="1024" height="768" loading="lazy" decoding="async">
             <span
               class="post-date badge bg-warning text-dark position-absolute bottom-0 start-0 m-3 p-2">10/02/2025</span>
           </div>

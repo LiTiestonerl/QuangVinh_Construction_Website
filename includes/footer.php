@@ -3,7 +3,7 @@
     <div class="row gy-4">
       <!-- Cột thông tin công ty -->
       <div class="col-lg-4 col-md-6">
-        <img src="assets/img/logo/500 x 200.svg" alt="Quang Vinh Logo" class="footer-logo mb-3" style="max-height: 60px;">
+        <img src="assets/img/logo/logo-500x200.svg" alt="Quang Vinh Logo" class="footer-logo mb-3" width="500" height="200" loading="lazy" decoding="async" style="max-height: 60px;">
         <h4 class="footer-title">CÔNG TY TNHH MTV XÂY DỰNG QUANG VINH</h4>
         <p class="footer-desc">Với hơn 10 năm hình thành và phát triển, chúng tôi chuyên thi công nhà ở, nhà xưởng,
           sửa chữa và cải tạo công trình tại Bình Dương và các tỉnh lân cận. Uy tín, chất lượng, giá cả cạnh tranh.

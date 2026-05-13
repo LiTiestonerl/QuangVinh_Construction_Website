@@ -13,6 +13,7 @@
   <!-- Favicons -->
   <link href="assets/img/logo/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preload" as="image" href="assets/img/hero-carousel/matbangcongty.jpg" type="image/jpeg" fetchpriority="high">
 
   <!-- Fonts -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">

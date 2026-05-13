@@ -40,7 +40,7 @@ include 'includes/header.php';
         </div>
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+          <img src="assets/img/services.jpg" alt="Dịch vụ xây dựng Quang Vinh" class="img-fluid services-img" width="1024" height="648" loading="lazy" decoding="async">
           <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
           <p>
             Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
