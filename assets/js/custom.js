@@ -21,6 +21,8 @@
     });
   }
 
+  document.querySelectorAll('.contact-icon').forEach((icon) => {
+    const info = icon.querySelector('.contact-info');
   /**
    * Xử lý click cho các icon liên hệ nổi.
    */
